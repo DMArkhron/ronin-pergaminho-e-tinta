@@ -1,0 +1,297 @@
+{
+  "id": "ronin-pergaminho-e-tinta",
+  "title": "RONIN - Pergaminho e Tinta",
+  "description": "Ficha Pergaminho & Tinta, classes, habilidades, itens, textos, tabelas, SVGs e macros integrados para RONIN 1.3.1 / Foundry 13. Modo Solo Contos Sem Mestre: guias, oráculos, macros de movimentos e quatro bestas em pasta separada.",
+  "version": "2.10.7",
+  "authors": [
+    {
+      "name": "Compilação para uso pessoal"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "maximum": "13",
+    "verified": "13.351"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "ronin",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.3.1",
+          "maximum": "1.3.1"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/rename-migration.mjs",
+    "scripts/module.mjs",
+    "scripts/sheet.mjs",
+    "scripts/enemy-sheet.mjs",
+    "scripts/character-generator.mjs",
+    "scripts/solo.mjs",
+    "scripts/chat.mjs",
+    "scripts/qol.mjs",
+    "scripts/roll-dialogs.mjs",
+    "scripts/user-config.mjs",
+    "scripts/opening.mjs"
+  ],
+  "packs": [
+    {
+      "name": "classes",
+      "label": "RONIN · Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "ronin"
+    },
+    {
+      "name": "habilidades",
+      "label": "RONIN · Habilidades",
+      "path": "packs/habilidades",
+      "type": "Item",
+      "system": "ronin"
+    },
+    {
+      "name": "equipamentos",
+      "label": "RONIN · Equipamentos e tesouros",
+      "path": "packs/equipamentos",
+      "type": "Item",
+      "system": "ronin"
+    },
+    {
+      "name": "textos",
+      "label": "RONIN · Textos Ocultos e Shintai",
+      "path": "packs/textos",
+      "type": "Item",
+      "system": "ronin"
+    },
+    {
+      "name": "tabelas",
+      "label": "RONIN · Tabelas",
+      "path": "packs/tabelas",
+      "type": "RollTable"
+    },
+    {
+      "name": "referencia",
+      "label": "RONIN · Livro de referência",
+      "path": "packs/referencia",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "macros",
+      "label": "RONIN · Macros de rolagem e preparação",
+      "path": "packs/macros",
+      "type": "Macro"
+    },
+    {
+      "name": "inimigos",
+      "label": "RONIN · Inimigos — Colorida e Preto e Branco",
+      "path": "packs/inimigos",
+      "type": "Actor",
+      "system": "ronin",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "handouts",
+      "label": "RONIN · Handouts dos inimigos",
+      "path": "packs/handouts",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "playlists",
+      "label": "RONIN · Trilhas sonoras",
+      "path": "packs/playlists",
+      "type": "Playlist"
+    },
+    {
+      "name": "organizacoes",
+      "label": "RONIN · Organizações",
+      "path": "packs/organizacoes",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "locais",
+      "label": "RONIN · Locais — Handouts",
+      "path": "packs/locais",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "solo-guias",
+      "label": "SOLO · Guias e handouts",
+      "path": "packs/solo-guias",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "solo-tabelas",
+      "label": "SOLO · Oráculos e tabelas",
+      "path": "packs/solo-tabelas",
+      "type": "RollTable"
+    },
+    {
+      "name": "solo-macros",
+      "label": "SOLO · Macros e procedimentos",
+      "path": "packs/solo-macros",
+      "type": "Macro"
+    },
+    {
+      "name": "solo-bestas",
+      "label": "SOLO · Bestas",
+      "path": "packs/solo-bestas",
+      "type": "Actor",
+      "system": "ronin"
+    }
+  ],
+  "styles": [
+    "styles/pergaminho.css",
+    "styles/enemy.css",
+    "styles/monochrome.css",
+    "styles/generator.css",
+    "styles/solo.css",
+    "styles/chat.css",
+    "styles/interface.css",
+    "styles/roll-dialogs.css",
+    "styles/user-config.css"
+  ],
+  "packFolders": [
+    {
+      "name": "RONIN",
+      "sorting": "a",
+      "color": "#96392d",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Personagens",
+          "sorting": "a",
+          "color": "#41658a",
+          "packs": [
+            "classes",
+            "habilidades",
+            "textos"
+          ]
+        },
+        {
+          "name": "Itens e equipamentos",
+          "sorting": "a",
+          "color": "#6a7840",
+          "packs": [
+            "equipamentos"
+          ]
+        },
+        {
+          "name": "Tabelas e macros",
+          "sorting": "a",
+          "color": "#906e35",
+          "packs": [
+            "tabelas",
+            "macros"
+          ]
+        },
+        {
+          "name": "Regras e referência",
+          "sorting": "a",
+          "color": "#695385",
+          "packs": [
+            "referencia"
+          ]
+        },
+        {
+          "name": "Inimigos",
+          "sorting": "a",
+          "color": "#8a394b",
+          "packs": [
+            "inimigos"
+          ]
+        },
+        {
+          "name": "Handouts",
+          "sorting": "a",
+          "color": "#337d79",
+          "packs": [
+            "handouts"
+          ]
+        },
+        {
+          "name": "Trilhas sonoras",
+          "sorting": "a",
+          "color": "#485575",
+          "packs": [
+            "playlists"
+          ]
+        },
+        {
+          "name": "Organizações",
+          "color": "#86643f",
+          "sorting": "a",
+          "packs": [
+            "organizacoes"
+          ]
+        },
+        {
+          "name": "Locais",
+          "color": "#517a68",
+          "sorting": "a",
+          "packs": [
+            "locais"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RONIN — Modo Solo",
+      "color": "#89494f",
+      "sorting": "a",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Guias e handouts",
+          "color": "#62658e",
+          "sorting": "a",
+          "packs": [
+            "solo-guias"
+          ]
+        },
+        {
+          "name": "Oráculos e tabelas",
+          "color": "#547659",
+          "sorting": "a",
+          "packs": [
+            "solo-tabelas"
+          ]
+        },
+        {
+          "name": "Macros e procedimentos",
+          "color": "#997141",
+          "sorting": "a",
+          "packs": [
+            "solo-macros"
+          ]
+        },
+        {
+          "name": "Bestas",
+          "color": "#8f8340",
+          "sorting": "a",
+          "packs": [
+            "solo-bestas"
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "modules/ronin-pergaminho-e-tinta/assets/cover/ronin-sol-vermelho.png",
+      "caption": "RONIN — sob o sol vermelho"
+    }
+  ],
+  "url": "https://github.com/DMArkhron/ronin-pergaminho-e-tinta",
+  "manifest": "https://github.com/DMArkhron/ronin-pergaminho-e-tinta/releases/latest/download/module.json",
+  "download": "https://github.com/DMArkhron/ronin-pergaminho-e-tinta/releases/download/v2.10.7/RONIN-Pergaminho-e-Tinta-v2.10.7.zip",
+  "bugs": "https://github.com/DMArkhron/ronin-pergaminho-e-tinta/issues"
+}
